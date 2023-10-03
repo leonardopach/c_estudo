@@ -23,8 +23,6 @@ int main()
   std::cout << "Apple: " << apple_count << " Orange: "
             << orange_count << " Fruit count : " << fruit_count << std::endl;
 
-  // Assignment notation
-
   int bike_count = 2;
   int truck_count = 7;
   int vehicle_count = bike_count + truck_count;
