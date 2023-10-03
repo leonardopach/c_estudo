@@ -2,10 +2,8 @@
 #include <ios>
 #include <iostream>
 
-int main() {
-  // std::endl : places a new line character on the output stream.
-  //        This is identical to placing '\n' on the output stream.
-
+int main()
+{
   std::cout << "Hello";
   std::cout << "World";
 
@@ -21,19 +19,12 @@ int main() {
   std::cout << "Hello\n";
   std::cout << "World\n";
 
-  //===================================================================
   std::cout << std::endl;
 
-  // std::flush : flushes the output buffer to its final destination.
-  std::cout << "This is a nice message...." << std::endl << std::flush;
-  // After this std::flush, we're sure that at this line, the message has been
-  // sent to the stream. This may be important in some applications.
+  std::cout << "This is a nice message...." << std::endl
+            << std::flush;
 
-  //===================================================================
   std::cout << std::endl;
-
-  // std::setw() : Adjusts the field with for the item about to be printed.
-  // The setw() manipulator only affects the next value to be printed.
 
   std::cout << "Unformatted table : " << std::endl;
   std::cout << "Daniel"
@@ -99,14 +90,8 @@ int main() {
   std::cout << std::setw(col_width) << "Izaiah" << std::setw(col_width)
             << "Robinson" << std::setw(col_width / 2) << "29" << std::endl;
 
-  //===================================================================
   std::cout << std::endl;
 
-  // Justify : Values can be justified in their fields. There are three
-  // manipulators
-  //           for adjusting the justification: left, right, and internal.
-
-  // right justified
   std::cout << std::endl;
   std::cout << "Right justified table(default) :  " << std::endl;
 
@@ -128,7 +113,6 @@ int main() {
   std::cout << std::setw(col_width) << "Izaiah" << std::setw(col_width)
             << "Robinson" << std::setw(col_width / 2) << "29" << std::endl;
 
-  // Left justified
   std::cout << std::endl;
   std::cout << "Left justified table :  " << std::endl;
 
@@ -150,7 +134,6 @@ int main() {
   std::cout << std::setw(col_width) << "Izaiah" << std::setw(col_width)
             << "Robinson" << std::setw(col_width / 2) << "29" << std::endl;
 
-  // Internal justified : sign is left justified , data is right justified
   std::cout << std::endl;
   std::cout << "Internal justified : " << std::endl;
   std::cout << std::right;
@@ -158,10 +141,7 @@ int main() {
   std::cout << std::internal;
   std::cout << std::setw(10) << -123.45 << std::endl;
 
-  //===================================================================
   std::cout << std::endl;
-
-  // setfill
 
   std::cout << std::endl;
   std::cout << "Table with fill characters :  " << std::endl;
@@ -185,10 +165,7 @@ int main() {
   std::cout << std::setw(col_width) << "Izaiah" << std::setw(col_width)
             << "Robinson" << std::setw(col_width / 2) << "29" << std::endl;
 
-  //===================================================================
   std::cout << std::endl;
-
-  // boolalpha and noboolapha : control bool output format : 1/0 or true/false
 
   bool condition{true};
   bool other_condition{false};
@@ -206,10 +183,7 @@ int main() {
   std::cout << "condition : " << condition << std::endl;
   std::cout << "other_condition : " << other_condition << std::endl;
 
-  //===================================================================
   std::cout << std::endl;
-
-  // showpos and noshowpos : show or hide the +  sign for positive numbers
 
   int pos_num{34};
   int neg_num{-45};
@@ -227,10 +201,7 @@ int main() {
   std::cout << "pos_num : " << pos_num << std::endl;
   std::cout << "neg_num : " << neg_num << std::endl;
 
-  //===================================================================
   std::cout << std::endl;
-
-  // different number systems : std::dec, std::hex, std::oct
 
   int pos_int{717171};
   int neg_int{-47347};
@@ -260,10 +231,7 @@ int main() {
   std::cout << "double_var (hex) : " << std::hex << double_var << std::endl;
   std::cout << "double_var (oct) : " << std::oct << double_var << std::endl;
 
-  //===================================================================
   std::cout << std::endl;
-
-  // uppercase and nouppercase
 
   pos_int = 717171;
 
@@ -279,10 +247,7 @@ int main() {
   std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
   std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
 
-  //===================================================================
   std::cout << std::endl;
-
-  // fixed and scientific : for floating point values
 
   double a{3.1415926535897932384626433832795};
   double b{2006.0};
@@ -316,11 +281,7 @@ int main() {
   std::cout << "b : " << b << std::endl;
   std::cout << "c : " << c << std::endl;
 
-  //===================================================================
   std::cout << std::endl;
-
-  // setprecision() : the number of digits printed out for a floating point.
-  // Default is 6
 
   a = 3.1415926535897932384626433832795;
 
@@ -330,15 +291,7 @@ int main() {
   std::cout << "a (precision(10)) : " << a << std::endl;
   std::cout << std::setprecision(20);
   std::cout << "a (precision(20)) : " << a << std::endl;
-
-  // If the precision is bigger than supported by the type, you'll just print
-  // garbage.
-
-  //===================================================================
   std::cout << std::endl;
-
-  // showpoint and noshowpoint : show trailing zeros if necessary
-  // Force output of the decimal point
 
   double d{34.1};
   double e{101.99};
