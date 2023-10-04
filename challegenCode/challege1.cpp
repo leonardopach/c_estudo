@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int FirstFactorial(int num)
@@ -8,13 +7,11 @@ int FirstFactorial(int num)
     for (int i = 1; i <= num; i++)
     {
         fac *= i;
-        std::cout << " " << fac;
     }
-    std::cout << std::endl;
     return fac;
 }
 
-int main(void)
+int main()
 {
     cout << FirstFactorial(4);
     return 0;
