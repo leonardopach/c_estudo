@@ -7,7 +7,7 @@ int main() {
     std::cout << "size of scores: " << sizeof(scores[0]) << std::endl;
     std::cout << "score item count : " << (sizeof(scores) / sizeof(scores[0])) << std::endl;
 
-    std::cout << std::endl;
+     std::cout << std::endl;
     for (size_t i{ 0 }; i < std::size(scores); i++) {
         std::cout << "scores[" << i << "] : " << scores[i] << std::endl;
     }

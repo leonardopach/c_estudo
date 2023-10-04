@@ -3,7 +3,7 @@
 int main() {
     char message[6]{ 'H', 'e', 'l' , 'l', 'o' };
     char message1[]{ "Hello" };
-
+    
     std::cout << "message : " << message1 << std::endl;
 
     std::cout << "Message : ";
