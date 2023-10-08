@@ -1,8 +1,5 @@
-
-
-#include <cctype>
 #include <iostream>
-#include <iterator>
+
 int main() {
   std::cout << "std::tolwer and std::toupper " << std::endl;
   char original_str[]{"Home. The feeling of belonging"};
