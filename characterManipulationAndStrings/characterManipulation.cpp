@@ -1,9 +1,5 @@
-
-
 #include <cctype>
-#include <ios>
 #include <iostream>
-#include <ostream>
 int main() {
 
   std::cout << std::endl;
